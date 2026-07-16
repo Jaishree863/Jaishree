@@ -1,0 +1,206 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f8fafc;
+color:#333;
+}
+
+header{
+background:#0f172a;
+position:fixed;
+width:100%;
+z-index:999;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:10px;
+}
+
+.hero h3{
+font-weight:400;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.section{
+padding:90px 0;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#0f172a;
+}
+
+.light{
+background:white;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+text-align:center;
+font-weight:500;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.timeline-item{
+background:white;
+padding:25px;
+margin-bottom:25px;
+border-left:5px solid #38bdf8;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.timeline-item h3{
+color:#1e3a8a;
+margin-bottom:8px;
+}
+
+.timeline-item span{
+font-size:14px;
+color:#777;
+}
+
+.timeline-item ul{
+margin-top:15px;
+padding-left:20px;
+line-height:1.8;
+}
+
+.edu{
+display:flex;
+justify-content:center;
+gap:50px;
+text-align:center;
+}
+
+.cert{
+max-width:700px;
+margin:auto;
+line-height:2;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.reveal{
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+
+header .container{
+flex-direction:column;
+}
+
+nav{
+margin-top:20px;
+}
+
+nav a{
+margin:10px;
+display:inline-block;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.edu{
+flex-direction:column;
+}
+
+}
